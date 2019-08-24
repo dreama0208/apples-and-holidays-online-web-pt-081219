@@ -1,3 +1,4 @@
+require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
@@ -75,6 +76,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each { |season, holiday|
     if holiday.values.include?("BBQ")
       arr << holiday
+      binding.pry
     end
   }
   arr
