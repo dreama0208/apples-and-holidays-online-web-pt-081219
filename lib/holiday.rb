@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
       v.each { |v, e|
         holidays = v.to_s.split("_").join(" ")
         supplies = e.join(", ")
-        puts "  #{v.to_s.capitalize}: #{supplies}"
+        puts "  #{holidays}: #{supplies}"
 
       }
   }
